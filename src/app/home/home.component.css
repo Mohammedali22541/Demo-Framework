@@ -1,0 +1,20 @@
+.home-section {
+  background-color: #1abc9c;
+}
+.height-section {
+  min-height: 97vh;
+}
+
+.main {
+  padding-top: 70px;
+}
+
+.pstar {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #fff;
+  margin-bottom: 0;
+  margin-top: 40px;
+  /* padding-top: 40 */
+}

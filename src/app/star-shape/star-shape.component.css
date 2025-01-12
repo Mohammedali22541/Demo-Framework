@@ -1,0 +1,44 @@
+.title h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+}
+.title h1::after {
+  content: "";
+  position: absolute;
+  bottom: -27px;
+  left: 56%;
+  background-color: #fff;
+  color: #fff;
+  width: 86px;
+  height: 4px;
+}
+
+.title h1::before {
+  content: "";
+  position: absolute;
+  bottom: -27px;
+  left: 22%;
+  background-color: #fff;
+  color: #fff;
+  width: 86px;
+  height: 4px;
+}
+.title span {
+  color: #fff;
+  position: absolute;
+  top: 105%;
+  left: 48%;
+}
+.pstar {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #fff;
+  margin-bottom: 0;
+  margin-top: 40px;
+  /* padding-top: 40 */
+}

@@ -1,0 +1,127 @@
+<section class="contact">
+  <div class="container pt-4">
+    <app-star
+      class="d-flex justify-content-center align-items-center flex-wrap"
+    >
+      <h1>conatct section</h1>
+      <span> <i class="fa-solid fa-star"></i></span>
+    </app-star>
+    <div class="user-info pt-5">
+      <!-- <form class="w-50 m-auto pt-3">
+          <div class="userName position-relative">
+            <input
+              class="form-control border-top-0 border-start-0 border-end-0"
+              type="text"
+              placeholder="user Name"
+              id="userName"
+            />
+            <label for="userName" class="floating-label">User Name:</label>
+          </div>
+  
+          <div class="userAge position-relative">
+            <input
+              class="form-control border-top-0 border-start-0 border-end-0"
+              type="text"
+              placeholder="user Age"
+              id="userAge"
+            />
+            <label for="userAge" class="floating-label">User Age:</label>
+          </div>
+  
+          <div class="userEmail position-relative">
+            <input
+              class="form-control border-top-0 border-start-0 border-end-0"
+              type="email"
+              placeholder="user Email"
+              id="userEmail"
+            />
+            <label for="userEmail" class="floating-label">User Email:</label>
+          </div>
+  
+          <div class="userPassword position-relative">
+            <input
+              class="form-control border-top-0 border-start-0 border-end-0"
+              type="password"
+              placeholder="user Password"
+              id="userPassword"
+            />
+            <label for="userPassword" class="floating-label"
+              >User Password:</label
+            >
+          </div>
+  
+          <button class="btn btn-success opacity-75">Send Message</button>
+        </form> -->
+
+      <form class="form-container w-50 p-3 mx-auto mt-5">
+        <div class="input-group">
+          <input
+            id="userName"
+            type="text"
+            name="userName"
+            class="inputs border-top-0 border-start-0 border-end-0"
+            placeholder="userName"
+            [(ngModel)]="userName"
+          />
+          <label for="userName" class="form-label">userName</label>
+          @if (userName) {
+          <div>
+            <span class="text-info text-capitalize"> your Username is: </span>
+            <span> {{ userName }}</span>
+          </div>
+          }
+        </div>
+
+        <div class="input-group">
+          <input
+            id="userAge"
+            type="number"
+            name="userAge"
+            class="inputs border-top-0 border-start-0 border-end-0"
+            placeholder="userAge"
+          />
+          <label for="userAge" class="form-label">userAge</label>
+          @if (userAge) {
+          <div>{{ userAge }}</div>
+          }
+        </div>
+
+        <div class="input-group">
+          <input
+            id="userEmail"
+            type="email"
+            name="userEmail"
+            class="inputs border-top-0 border-start-0 border-end-0"
+            placeholder="userEmail"
+          />
+          <label for="userEmail" class="form-label">userEmail</label>
+          @if (userEmail) {
+          <div>{{ userEmail }}</div>
+          }
+        </div>
+
+        <div class="input-group">
+          <input
+            id="userPassword"
+            type="password"
+            name="userPassword"
+            class="inputs border-top-0 border-start-0 border-end-0"
+            placeholder="userPassword"
+          />
+          <label for="userPassword" class="form-label">userPassword</label>
+          @if (userPassword) {
+          <div>{{ userPassword }}</div>
+          }
+        </div>
+
+        <button
+          type="submit"
+          class="btn mt-4 text-white"
+          style="background-color: #1abc9c"
+        >
+          Send Message
+        </button>
+      </form>
+    </div>
+  </div>
+</section>

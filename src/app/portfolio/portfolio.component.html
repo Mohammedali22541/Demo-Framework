@@ -1,0 +1,29 @@
+<section class="portfolio">
+  <div class="container pt-5">
+    <app-star
+      class="d-flex flex-wrap justify-content-center align-items-center"
+    >
+      <h1>portfolio component</h1>
+      <span class=""> <i class="fa-solid fa-star"></i></span>
+    </app-star>
+    <div class="row g-4">
+      @for (img of images; track $index) {
+      <div class="col-md-4">
+        <div class="img-info position-relative" (click)="openModal(img)">
+          <img [src]="img.imageSrc" width="100%" [alt]="img.alt" />
+          <div class="layer">
+            <span><i class="fa-solid fa-plus fa-5x"></i></span>
+          </div>
+        </div>
+      </div>
+
+      }
+    </div>
+  </div>
+</section>
+
+<div class="container-light d-none" (click)="closeModal($event)" #modal>
+  <div class="box">
+    <img class="w-100" [src]="currentimgSrc" [alt]="currentAlt" />
+  </div>
+</div>

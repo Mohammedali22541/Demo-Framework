@@ -1,0 +1,48 @@
+.padding-section {
+  padding: 70px;
+}
+.about-web .icon {
+  border: 1px solid #fff;
+  width: 40px;
+  border-radius: 50%;
+}
+footer {
+  background-color: #2c3e50;
+}
+.footer .heading-title {
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+  padding-top: 20px;
+}
+.footer .text-heading {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #fff;
+}
+.footer .icons .icon {
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+.site-copyright {
+  text-align: center;
+  background-color: #1a252f;
+}
+.site-copyright p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: capitalize;
+  margin-bottom: 0;
+}

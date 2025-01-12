@@ -1,0 +1,51 @@
+.about-component {
+  background-color: #1abc9c;
+  min-height: 97vh;
+}
+.height-section {
+  min-height: inherit;
+}
+app-star h1 {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  margin: 40px 0px 50px 0;
+}
+.mainParagraph {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #fff;
+}
+
+app-star h1::after {
+  content: "";
+  position: absolute;
+  bottom: -27px;
+  left: 56%;
+  background-color: #fff;
+  color: #fff;
+  width: 86px;
+  height: 4px;
+}
+
+app-star h1::before {
+  content: "";
+  position: absolute;
+  bottom: -27px;
+  left: 21%;
+  background-color: #fff;
+  color: #fff;
+  width: 86px;
+  height: 4px;
+}
+
+app-star span {
+  top: 124%;
+  color: #fff;
+  position: absolute;
+  left: 47%;
+}

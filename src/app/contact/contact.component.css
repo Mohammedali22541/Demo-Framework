@@ -1,0 +1,100 @@
+.contact {
+  background-color: #ffffff;
+  padding: 70px;
+}
+
+app-star h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #000;
+  line-height: 48px;
+  /* margin-block: 40px; */
+  margin: 40px 0px 50px 0;
+  text-transform: uppercase;
+  position: relative;
+}
+
+app-star h1::after {
+  content: "";
+  position: absolute;
+  bottom: -27px;
+  right: 67px;
+  background-color: #000;
+  width: 86px;
+  height: 4px;
+}
+
+app-star h1::before {
+  content: "";
+  position: absolute;
+  bottom: -27px;
+  left: 45px;
+  background-color: #000;
+  width: 86px;
+  height: 4px;
+}
+
+app-star span {
+  color: #000;
+  position: absolute;
+  top: 72%;
+  left: 45%;
+}
+
+input:focus {
+  box-shadow: none;
+  border-color: #dee2e6;
+}
+.inputs {
+  width: 100%;
+  padding: 15px 10px 10px 2px;
+  font-size: 16px;
+  border: 1px solid #eee;
+  outline: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.inputs::placeholder {
+  color: #595c5f;
+  padding-left: 2px;
+}
+.form-label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  opacity: 0;
+}
+.inputs:focus + .form-label,
+.inputs:not(:placeholder-shown) + .form-label {
+  top: 0px;
+  font-size: 15px;
+  color: #1abc9c;
+  opacity: 1;
+  left: 0;
+}
+.inputs:focus + .form-label::after,
+.inputs:not(:placeholder-shown) + .form-label::after {
+  content: ":";
+  color: #1abc9c;
+  margin-left: 5px;
+}
+.inputs:placeholder-shown + .form-label {
+  top: 50%;
+  font-size: 16px;
+  color: #ccc;
+  opacity: 0;
+}
+.inputs:placeholder-shown {
+  color: black;
+}
+
+.input-group {
+  padding-block: 10px;
+}
